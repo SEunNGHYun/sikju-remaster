@@ -17,9 +17,9 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/no-unused-style': 'off',
     'react-native/split-platform-components': 2,
-    'react-native/no-inline-styles': 2,
-    'react-native/no-color-literals': 2,
-    'react-native/no-raw-text': 2,
+    'react-native/no-inline-styles': 'off',
+    'react-native/no-color-literals': 'off',
+    'react-native/no-raw-text': 'off',
     'react-native/no-single-element-style-arrays': 2,
   },
   globals: {
