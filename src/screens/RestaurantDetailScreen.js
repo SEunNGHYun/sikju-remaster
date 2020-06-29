@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Text, Button, StyleSheet
+  View, Text, StyleSheet
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -10,17 +10,12 @@ const styles = StyleSheet.create({
   },
   view: { flex: 1, alignItems: 'center', justifyContent: 'center' },
 });
-
-const AuthScreen = ({ navigation }) => {
+const RestaurantDetailScreen = () => {
   return (
     <View style={styles.view}>
-      <Text style={styles.test}>PhoneAuth Screen</Text>
-      <Button
-        title="인증 후 메인으로 이동"
-        onPress={() => navigation.navigate('Tab')}
-      />
+      <Text style={styles.test}>식당 상세 페이지</Text>
     </View>
   );
 };
 
-export default AuthScreen;
+export default RestaurantDetailScreen;
