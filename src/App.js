@@ -12,7 +12,7 @@ import { Provider } from 'react-redux';
 import reducer from './redux/reducers';
 
 import IntroScreen from './screens/IntroScreen';
-import LoginScreen from './screens/LoginScreen';
+import LoginScreen from './screens/login/LoginScreen';
 import AuthScreen from './screens/AuthScreen';
 import MapScreen from './screens/MapScreen';
 import RestaurantDetailScreen from './screens/RestaurantDetailScreen';
