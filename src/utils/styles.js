@@ -1,0 +1,30 @@
+const elevationShadowStle = (elevation) => ({
+  elevation,
+  shadowColor: 'black',
+  shadowOffset: {
+    width: 0, height: 0.5 * elevation,
+  },
+  shadowOpacity: 0.3,
+  shadowRadius: 0.8 * elevation,
+});
+export default {
+  blackColor: '#262626',
+  greyColor: '#E0E0E0',
+  darkGreyColor: '#999',
+  lightGreyColor: '#F9F9F9',
+  redColor: '#E53017',
+  blueColor: '#4267b2',
+  darkBlueColor: '#2f2179',
+  primaryColor: '#5F5BD9',
+  secondaryColor: '#a1a1ff',
+  tertiaryColor: '#1f1f59',
+  textPrimaryColor: '#ffeda0',
+  textSecondaryColor: '#FFE05C',
+  textBlackColor: '#191919',
+  textGreyColor: '#888888',
+  bordercolor: '#cccccc',
+  shadow0: elevationShadowStle(3),
+  shadow1: elevationShadowStle(5),
+  shadow2: elevationShadowStle(10),
+  shadow3: elevationShadowStle(20),
+};
