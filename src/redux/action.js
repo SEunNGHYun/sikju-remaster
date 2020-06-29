@@ -1,10 +1,10 @@
-export const test = "TE";
-//액셩타입 지정 대문자로 보통 지정
+export const test = 'TE';
+// 액셩타입 지정 대문자로 보통 지정
 
-export function testFunction(){
+export function testFunction() {
   return {
     type: test
-  }
+  };
 }
 // export function inputFuncs(val) {
 //   return {
@@ -13,4 +13,4 @@ export function testFunction(){
 //   }
 // }
 
-//액션 실행 함수 선언
+// 액션 실행 함수 선언
