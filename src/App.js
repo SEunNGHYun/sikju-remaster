@@ -6,13 +6,15 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import IntroScreen from './screens/IntroScreen';
 import LoginScreen from './screens/LoginScreen';
 import AuthScreen from './screens/AuthScreen';
 import MapScreen from './screens/MapScreen';
 import RestaurantDetailScreen from './screens/RestaurantDetailScreen';
-import NearRests from './screens/TabNavigations/nearRests/NearRests';
+
 import MainScreen from './screens/TabNavigations/main/MainScreen';
+import NearRests from './screens/TabNavigations/nearRests/NearRests';
 
 const Stack = createStackNavigator();
 
