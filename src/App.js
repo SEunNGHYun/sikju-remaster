@@ -6,7 +6,9 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import { createStore  }from 'redux';
+import {Provider }from 'react-redux';
+import reducer from './redux/reducers';
 import IntroScreen from './screens/IntroScreen';
 import LoginScreen from './screens/LoginScreen';
 import AuthScreen from './screens/AuthScreen';
@@ -34,6 +36,9 @@ const MyPage = () => {
   );
 };
 
+const Store = createStore(reducer);
+//reducer를 이용하여 store 만들기
+
 const Tab = createBottomTabNavigator();
 
 const TabNavigation = () => {
@@ -46,8 +51,10 @@ const TabNavigation = () => {
   );
 };
 
+//store적용 
 function App() {
   return (
+    <Provider store={Store}>
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
@@ -64,6 +71,7 @@ function App() {
         <Stack.Screen name="RestaurantDetail" component={RestaurantDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
+    </Provider>
   );
 }
 
